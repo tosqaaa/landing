@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBreakers</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>CodeBreakers</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Проекты" onclick="slowScroll('#main')">Проекты</a>
+            <a href="#" title="Разработчики" onclick="slowScroll('#developers')">Разработчики</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+        </div>
+    </header>
+    <div id="top">
+        <h1>CodeBreakers</h1>
+        <h3>Сообщество программистов</h3>
+    </div>
+    <div id="main">
+        <h2>Проекты нашего сообщества</h2>
+        <a href="http://codebreakers.site/VSUschedule/" id="VSUschedule_button">
+            <div id="project">
+                <h3>Расписание "VSU Schedule"</h3>
+                <span>Проект представляет собой веб-сайт с расписанием занятий Университета ВГУ имени П.М. Машерова, где
+                    студенты и преподаватели могут быстро и легко найти актуальное расписание занятий для своей группы
+                    или
+                    курса. Одним из главных преимуществ сайта является моментальное обновление расписания, что
+                    обеспечивает
+                    точность и актуальность информации. Дизайн сайта разработан таким образом, чтобы обеспечить
+                    максимальное
+                    удобство использования и быстрый доступ к нужной информации.</span>
+            </div>
+        </a>
+    </div>
+
+    <div id="developers">
+        <h2>Разработчики</h2>
+        
+            <a href="https://t.me/tosqaaa" id="link-to-dev">tosqa</a>
+            <a href="https://t.me/NewFPV" id="link-to-dev">NewFPV</a>
+            <a href ="https://t.me/farnsworth3010" id="link-to-dev">farnsworth3010</a>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html,  body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+
+</html>

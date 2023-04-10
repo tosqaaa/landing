@@ -1,0 +1,251 @@
+/* basic */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Helvetica';
+}
+
+/* header */
+header {
+    transition: 600ms;
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        margin-top: 15px;
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+
+
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    padding-top: 2%;
+    margin-bottom: 10px;
+
+}
+
+#about>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about>a:hover {
+    color: silver;
+    text-decoration: none;
+}
+
+#about>a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    transition: 700ms;
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: rgba(0, 0, 0);
+}
+
+.fixed #about a {
+    color: rgba(0, 0, 0)
+}
+
+.fixed #about a:hover {
+    color: #7c7c7c
+}
+
+#top {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://oboi-download.ru/files/wallpapers/41/1851.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.5em;
+    }
+}
+
+#top h1 {
+    padding-top: 17%;
+    color: #f6f6f6;
+}
+
+#top h3 {
+    color: #ffffffc5;
+}
+
+/* Главная */
+
+#main {
+    transition: 600ms;
+    padding: 100px 10%;
+    width: 80%;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-top: 1px solid silver;
+    color: #000;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+#main span {
+    font-size: 0.8em;
+}
+
+/* Проекты */
+#project {
+    transition: 250ms;
+    border: 1px solid silver;
+    padding: 100px 10%;
+    background-color: #f6f6f6;
+    width: 80%;
+    font-family: 'Montserrat';
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+
+}
+
+#project:hover {
+    transition: 250ms;
+    background-color: #c5c5c5c5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#VSUschedule_button:link {
+    text-decoration: none;
+    color: black;
+}
+
+#VSUschedule_button:visited {
+    color: black;
+}
+
+@media (max-width: 701px) {
+    #main {
+        font-size: 1em;
+    }
+}
+
+/* Разработчики */
+#developers {
+    transition: 600ms;
+    padding: 50px 10%;
+    width: 80%;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-top: 1px solid silver;
+    color: #000;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    justify-content: space-between;
+}
+
+#developers h2 {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#developers>a:link {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #000;
+}
+
+#developers>a:visited {
+    color: #000;
+}
+
+#link-to-dev {
+    background-color: #f6f6f6;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 0.5%;
+    border: 1px solid silver;
+}
+
+#link-to-dev:hover {
+    background-color: #c5c5c5c5;
+}
