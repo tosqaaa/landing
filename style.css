@@ -58,11 +58,12 @@ header #logo span {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 701px) {
     #logo {
         margin-top: 15px;
         width: 100%;
-        font-size: 1.5em;
+        font-size: 1.6em;
+        text-align: center;
     }
 
     #about {
@@ -136,13 +137,17 @@ header.fixed #logo {
 
 @media (max-width: 1000px) and (min-width: 651px) {
     #top {
+        padding-top: 25%;
         font-size: 2em;
     }
+
 }
 
 @media (max-width: 650px) {
     #top {
         font-size: 1.5em;
+        padding-top: 25%;
+        
     }
 }
 
@@ -169,6 +174,9 @@ header.fixed #logo {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 1.6em;
+}
+#main h3 {
+    padding-bottom: 20px;
 }
 
 #main span {
@@ -256,4 +264,10 @@ header.fixed #logo {
 #link-to-dev:hover {
     background-color: #c5c5c5c5;
     transition: 250ms;
+}
+
+@media(max-width: 701px) {
+    #developers {
+        font-size: 0.5em;
+    }
 }
