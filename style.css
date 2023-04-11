@@ -198,14 +198,15 @@ header.fixed #logo {
     text-decoration: none;
 }
 
-#VSUschedule_button:link {
+#link_button:link {
     text-decoration: none;
     color: black;
 }
 
-#VSUschedule_button:visited {
+#link_button:visited {
     color: black;
 }
+
 
 @media (max-width: 701px) {
     #main {
