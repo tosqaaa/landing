@@ -38,14 +38,16 @@ header #logo {
 header #logo span {
     font-size: 1.7em;
     line-height: 45px;
-    margin-left: 40px;
     font-family: 'Montserrat';
     font-weight: 500;
 }
 
+
+
 @media (min-width: 701px) {
     #logo {
         margin-top: 15px;
+        margin-left: 45px;
         float: left;
         width: 30%;
         font-size: 1.1em;
@@ -53,13 +55,16 @@ header #logo span {
 
     #about {
         float: right;
-        width: 67%;
+        width: 70%;
+        margin-top: -30px;
+        
     }
 
 }
 
+
 @media (max-width: 701px) {
-    #logo {
+    #logo  {
         margin-top: 15px;
         width: 100%;
         font-size: 1.6em;
@@ -69,6 +74,7 @@ header #logo span {
     #about {
         float: left;
         width: 100%;
+        padding-top: 10px;
     }
 
 
@@ -77,9 +83,6 @@ header #logo span {
 #about {
     text-align: center;
     font-size: 1em;
-    padding-top: 2%;
-    margin-bottom: 10px;
-
 }
 
 #about>a {
@@ -96,6 +99,8 @@ header #logo span {
     margin-right: 7%;
 }
 
+
+/* .fixed */
 .fixed {
     transition: 700ms;
     z-index: 5000;
@@ -117,44 +122,42 @@ header.fixed #logo {
 
 #top {
     width: 100%;
-    height: 700px;
     background-image: url(https://oboi-download.ru/files/wallpapers/41/1851.jpg);
     background-blend-mode: multiply;
     background-color: #2e3a44;
-    background-size: cover;
+    background-size: auto;
     text-align: center;
     color: #fff;
-    font-size: 3em;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
 }
 
 @media (min-width: 1001px) {
     #top {
+        height: 700px;
         font-size: 3em;
     }
 }
 
 @media (max-width: 1000px) and (min-width: 651px) {
     #top {
-        padding-top: 25%;
+        height: 500px;
         font-size: 2em;
+        padding-top: 10%;
     }
 
 }
 
 @media (max-width: 650px) {
     #top {
+        height: 500px;
         font-size: 1.5em;
-        padding-top: 25%;
-        
+        padding-top: 200px;
     }
 }
 
 #top h1 {
     padding-top: 17%;
     color: #f6f6f6;
-
 }
 
 #top h3 {
@@ -218,22 +221,22 @@ header.fixed #logo {
 
 @media (max-width: 701px) {
     #main {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
 
 /* Разработчики */
 #developers {
     transition: 600ms;
-    padding: 50px 10%;
-    width: 80%;
+    padding: 50px 25%;
+    width: 50%;
     text-align: center;
     background-color: #f6f6f6;
     border-top: 1px solid silver;
     color: #000;
     font-family: 'Montserrat';
     font-weight: 300;
-    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 #developers h2 {
@@ -251,23 +254,31 @@ header.fixed #logo {
     color: #000;
 }
 
-#link-to-dev {
+
+#dev {
     background-color: #f6f6f6;
-    padding: 10px 10px;
     border-radius: 15px;
-    margin: 0.5%;
+    margin: 3%;
     border: 1px solid silver;
     transition: 250ms;
-    margin-top: 50px;
+    display: flex;
+    
+
 }
 
-#link-to-dev:hover {
-    background-color: #c5c5c5c5;
-    transition: 250ms;
+#dev  img {
+    width: 30%;
+    border-radius: 15px;
+    border: 2px solid silver;
+    margin-top: 5%;
+    margin-left: -60%;
 }
 
-@media(max-width: 701px) {
-    #developers {
-        font-size: 0.5em;
-    }
+#dev h3 {
+    text-align: left;
+    margin-left: 6%;
+}
+
+#dev span {
+    text-align: right;
 }
