@@ -133,12 +133,13 @@ header.fixed #logo {
 }
 
 
-@media (min-width: 1002px){
+@media (min-width: 1002px) {
     #top {
         height: 95%;
         font-size: 4em;
     }
 }
+
 @media (max-width: 1001px) {
     #top {
         height: 100%;
@@ -233,7 +234,8 @@ header.fixed #logo {
         font-size: 1.3em;
     }
 }
-@media (min-width: 1000px){
+
+@media (min-width: 1000px) {
     #main {
         font-size: 2.2em
     }
@@ -256,7 +258,7 @@ header.fixed #logo {
 
 }
 
-#wrapper {
+#wrapper-about-us {
     display: flex;
     width: 100%;
     background-color: #fff;
@@ -264,7 +266,7 @@ header.fixed #logo {
 
 }
 
-#title {
+#title-about-us {
     text-align: center;
 }
 
@@ -276,9 +278,10 @@ header.fixed #logo {
     width: 100%;
     margin-right: 10%;
     border: 1px solid silver;
-    
+
 
 }
+
 #dev p {
     font-size: 0.8em;
 }
@@ -299,25 +302,29 @@ header.fixed #logo {
 
 
 @media(max-width: 1001px) {
-    #wrapper {
+    #wrapper-about-us {
         display: block;
         /* padding: 24px 10%;
         width: 80%; */
         text-align: center;
         margin-right: 0;
     }
+
     #about-us {
         padding: 100px 30%;
         width: 40%;
     }
+
     #dev img {
         width: 30%;
     }
+
     #dev {
         padding: 50px 10%;
         width: 80%;
         margin-top: 5%;
     }
+
     #dev:first-child {
         margin-top: 0;
     }
@@ -328,13 +335,59 @@ header.fixed #logo {
     #dev img {
         width: 40%;
     }
+
     #dev {
         font-size: 80%;
     }
 }
 
-@media (min-width: 1001px){
-    #title{font-size: 1.6em;}
+@media (min-width: 1001px) {
+    #title-about-us {
+        font-size: 1.6em;
+    }
 
-    
+
+}
+
+/* Контакты */
+#contacts {
+    display: block;
+    background-color: #f6f6f6;
+    padding: 100px 10%;
+    width: 80%;
+    font-family: 'Montserrat';
+    border-top: 1px solid silver;
+    justify-content: space-between;
+
+}
+
+
+
+
+#contacts-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.4em;
+}
+
+#contacts-button {
+    transition: 250ms;
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 20px 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f6f6f6;
+    font-size: 1.4em;
+}
+#contacts-button:hover {
+    background-color: #c5c5c5c5;
+    transition: 250ms;
+}
+#title-contacts {
+    text-align: center;
+    font-size: 2.2em;
+
 }
