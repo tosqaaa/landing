@@ -44,27 +44,27 @@ header #logo span {
 
 
 
-@media (min-width: 701px) {
+@media (min-width: 870px) {
     #logo {
         margin-top: 15px;
         margin-left: 45px;
         float: left;
         width: 30%;
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
 
     #about {
         float: right;
         width: 70%;
         margin-top: -30px;
-        
+        font-size: 1.7em;
     }
 
 }
 
 
-@media (max-width: 701px) {
-    #logo  {
+@media (max-width: 870px) {
+    #logo {
         margin-top: 15px;
         width: 100%;
         font-size: 1.6em;
@@ -82,7 +82,7 @@ header #logo span {
 
 #about {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 #about>a {
@@ -106,6 +106,7 @@ header #logo span {
     z-index: 5000;
     background-color: #fff;
     border-bottom: 1px solid silver;
+
 }
 
 header.fixed #logo {
@@ -131,10 +132,17 @@ header.fixed #logo {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 1001px) {
+
+@media (min-width: 1002px){
     #top {
-        height: 700px;
-        font-size: 3em;
+        height: 95%;
+        font-size: 4em;
+    }
+}
+@media (max-width: 1001px) {
+    #top {
+        height: 100%;
+        font-size: 5em;
     }
 }
 
@@ -178,6 +186,7 @@ header.fixed #logo {
     font-weight: 300;
     font-size: 1.6em;
 }
+
 #main h3 {
     padding-bottom: 20px;
 }
@@ -224,61 +233,108 @@ header.fixed #logo {
         font-size: 1.3em;
     }
 }
+@media (min-width: 1000px){
+    #main {
+        font-size: 2.2em
+    }
+}
 
 /* Разработчики */
-#developers {
+#about-us {
+    display: block;
+    justify-content: space-between;
     transition: 600ms;
-    padding: 50px 25%;
-    width: 50%;
-    text-align: center;
+    padding: 100px 10%;
+    width: 80%;
     background-color: #f6f6f6;
     border-top: 1px solid silver;
     color: #000;
     font-family: 'Montserrat';
     font-weight: 300;
-    padding-bottom: 100px;
+    text-align: center;
+    font-size: 1.6em;
+
 }
 
-#developers h2 {
-    font-size: 2em;
-    padding-bottom: 50px;
+#wrapper {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 100px;
+
 }
 
-#developers>a:link {
-    font-size: 1.3em;
-    text-decoration: none;
-    color: #000;
+#title {
+    text-align: center;
 }
-
-#developers>a:visited {
-    color: #000;
-}
-
 
 #dev {
+    width: 26%;
     background-color: #f6f6f6;
     border-radius: 15px;
-    margin: 3%;
+    padding: 30px 0;
+    width: 100%;
+    margin-right: 10%;
     border: 1px solid silver;
-    transition: 250ms;
-    display: flex;
     
 
 }
+#dev p {
+    font-size: 0.8em;
+}
 
-#dev  img {
-    width: 30%;
+#dev h2 {
+    font-size: 0.9em;
+}
+
+#dev:last-child {
+    margin-right: 0;
+}
+
+#dev img {
+    width: 50%;
+    border: 1px solid silver;
     border-radius: 15px;
-    border: 2px solid silver;
-    margin-top: 5%;
-    margin-left: -60%;
 }
 
-#dev h3 {
-    text-align: left;
-    margin-left: 6%;
+
+@media(max-width: 1001px) {
+    #wrapper {
+        display: block;
+        /* padding: 24px 10%;
+        width: 80%; */
+        text-align: center;
+        margin-right: 0;
+    }
+    #about-us {
+        padding: 100px 30%;
+        width: 40%;
+    }
+    #dev img {
+        width: 30%;
+    }
+    #dev {
+        padding: 50px 10%;
+        width: 80%;
+        margin-top: 5%;
+    }
+    #dev:first-child {
+        margin-top: 0;
+    }
+
 }
 
-#dev span {
-    text-align: right;
+@media(max-width: 701px) {
+    #dev img {
+        width: 40%;
+    }
+    #dev {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1001px){
+    #title{font-size: 1.6em;}
+
+    
 }
