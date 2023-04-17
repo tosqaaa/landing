@@ -382,6 +382,7 @@ header.fixed #logo {
     margin-top: 50px;
     background-color: #f6f6f6;
     font-size: 1.4em;
+    
 }
 #contacts-button:hover {
     background-color: #c5c5c5c5;
@@ -390,5 +391,14 @@ header.fixed #logo {
 #title-contacts {
     text-align: center;
     font-size: 2.2em;
+}
 
+#contacts-link:link {
+    text-decoration: none;
+    color: #000;
+}
+
+#contacts-link:visited {
+    text-decoration: none;
+    color: #000;
 }
